@@ -56,16 +56,14 @@
           <div id="link-list">
             <ul id='link'>
               <li v-for="(item, index) in vuelink">
-                  <i :class="item.icon"></i> ${item.name}: 
-                  <a :href="item.link" target="_blank" rel="noreferrer noopener">${item.link}
-                  </a>
+                  <i :class="item.icon"></i> <a :href="item.link" target="_blank" rel="noreferrer noopener"> ${item.name} </a>                  
               </li>
             </ul>
           </div>
 
           <h4>✨What's new?</h4>
           <div id="link-list">
-            <ul> 
+            <ul id='link'> 
               <li v-for="(item, index) in newlink">
                   ${item.title} :
                   <a :href="item.link" target="_blank" rel="noreferrer noopener">${item.name}
