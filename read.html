@@ -47,22 +47,23 @@
             </nav>
           </div>
         </header>
+        <br/>
         <main class="px-2">
-          <h2>I HAVE READ <u>${liter.length + business.length + help.length}</u> BOOKS.</h2>
+          <h2>I HAVE READ <u>${liter.length + business.length + help.length + philo.length}</u> BOOKS.</h2>
           <p>These are what I have read in 2021.</p>
           <div class="container marketing">
           <div class="row">
             <div class="col-lg-4">
-              <img id='circleimg' src="image/book1.jpeg" alt="Avatar" width="140" height="140">
-              <h5>Literature</h5>
+              <img id='circleimg' src="image/book1.jpg" alt="Avatar" width="140" height="140">
+              <h5>Literature & Fiction</h5>
               <ul id='booklist'>
                 <li v-for="(item, index) in liter">
                   ${item.name} by ${ item.author }
                 </li>
               </ul>
-            </div>
+            </div>  
             <div class="col-lg-4">
-              <img id='circleimg' src="image/book2.jpeg" alt="Avatar" width="140" height="140">
+              <img id='circleimg' src="image/book2.jpg" alt="Avatar" width="140" height="140">
               <h5>Self-help</h5>
               <ul id='booklist'>
                 <li v-for="(item, index) in help">
@@ -71,7 +72,7 @@
               </ul>
             </div>
             <div class="col-lg-4">
-              <img id='circleimg' src="image/book3.jpeg" alt="Avatar" width="140" height="140">
+              <img id='circleimg' src="image/book3.jpg" alt="Avatar" width="140" height="140">
               <h5>Business & Money</h5>
               <ul id='booklist'>
                 <li v-for="(item, index) in business">
@@ -79,11 +80,20 @@
                 </li>
               </ul>
             </div>
+            <div class="col-lg-4">
+              <img id='circleimg' src="image/book4.jpg" alt="Avatar" width="140" height="140">
+              <h5>Philosophy</h5>
+              <ul id='booklist'>
+                <li v-for="(item, index) in philo">
+                  ${item.name} by ${ item.author }
+                </li>
+              </ul>
+            </div> 
           </div>
         </main>
 
         <footer class="mt-auto text-white-50">
-          <small>Background image by <a href="https://www.pexels.com/@marcelo-jaboo-219257" class="text-white">${artist}</a></small>
+          <small>All images from ${artist}</small>
         </footer>
       </div>   
   </body>
@@ -120,12 +130,13 @@
 		{ name: '我想跟你好好說話', author: '賴佩霞' },
 		{ name: '一期一會的生命禮物', author: '曾寶儀' },
 		{ name: '人生最大的成就，是成為你自己', author: '曾寶儀' }, 
-		{ name: '在別人的地圖上，找不到自己的路', author: '澈言' },
 		{ name: '假如我現在25歲，最想做的50件事', author: '松浦彌太郎' },
 		{ name: '和自己，相愛不相礙', author: '郭葉珍' },
 		{ name: '不一樣又怎樣', author: 'Jonathan Mooney' }
 	      ],
 	    liter: [
+	    { name: '審判', author: 'Franz Kafka' },
+	    { name: '一九八四', author: 'George Orwell' },
 		{ name: '鼠疫(瘟疫)', author: 'Albert Camus' },
 		{ name: '尋羊冒險記', author: '村上春樹' },
 		{ name: '異鄉人', author: 'Albert Camus' },
@@ -140,7 +151,6 @@
 		{ name: '普通的戀愛', author: '謝凱特' },
 		{ name: '理想的下午', author: '舒國治' },
 		{ name: '老派少女購物路線', author: '洪愛珠' },
-		{ name: '葉有慧', author: '張西' },
 		{ name: '一場極為安詳的死亡', author: 'Simone de Beauvoir' },
 		{ name: '不是所有親密關係都叫做愛情', author: '陳雪' },
 		{ name: '親愛的共犯', author: '陳雪' },
@@ -149,7 +159,10 @@
 		{ name: '傍晚五點十五分', author: '夏夏' },
 		{ name: '女神自助餐', author: '劉芷妤' }
 	      ],
-      artist: '@marcelo-jaboo'
+	     philo: [
+		{ name: '人生的智慧', author: 'Arthur Schopenhauer' }
+	      ],
+      artist: 'Unsplash'
 	  },
 	});
 
