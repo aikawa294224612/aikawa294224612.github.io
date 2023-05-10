@@ -1,0 +1,74 @@
+{
+  "ImplementationGuide/polly.example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 0,
+    "source" : "D:\\下載資料\\PollyIG\\fsh-generated\\resources\\ImplementationGuide-polly.example.json",
+    "sourceTail" : "ImplementationGuide-polly.example.json",
+    "path" : "ImplementationGuide-polly.example.html",
+    "url" : "http://polly.example.com/ImplementationGuide/polly.example",
+    "version" : "0.1.0",
+    "name" : "PollyIG",
+    "date" : "2023-05-10T17:43:36+08:00",
+    "status" : {
+      "class" : "colsd",
+      "owner" : "polly",
+      "link" : "http://polly.example.com",
+      "status" : "Draft"
+    }
+  },
+  "Patient/PatientExample" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 1,
+    "source" : "fsh-generated/resources/Patient-PatientExample.json",
+    "sourceTail" : "Patient-PatientExample.json",
+    "path" : "Patient-PatientExample.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "StructureDefinition/occupation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 2,
+    "source" : "fsh-generated/resources/StructureDefinition-occupation.json",
+    "sourceTail" : "StructureDefinition-occupation.json",
+    "path" : "StructureDefinition-occupation.html",
+    "url" : "http://polly.example.com/StructureDefinition/occupation",
+    "version" : "0.1.0",
+    "name" : "PollyOccupation",
+    "title" : "Occupation",
+    "date" : "2023-05-10T17:43:36+08:00",
+    "description" : "職業",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "polly",
+      "link" : "http://polly.example.com",
+      "status" : "Active"
+    }
+  },
+  "StructureDefinition/PollyPatient" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 3,
+    "source" : "fsh-generated/resources/StructureDefinition-PollyPatient.json",
+    "sourceTail" : "StructureDefinition-PollyPatient.json",
+    "path" : "StructureDefinition-PollyPatient.html",
+    "url" : "http://polly.example.com/StructureDefinition/PollyPatient",
+    "version" : "0.1.0",
+    "name" : "PollyPatient",
+    "date" : "2023-05-10T17:43:36+08:00",
+    "description" : "這是Polly的測試Profile",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "polly",
+      "link" : "http://polly.example.com",
+      "status" : "Active"
+    }
+  }
+}

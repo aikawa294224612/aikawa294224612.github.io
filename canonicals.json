@@ -1,0 +1,23 @@
+[
+  {
+    "id" : "polly.example",
+    "type" : "ImplementationGuide",
+    "url" : "http://polly.example.com/ImplementationGuide/polly.example",
+    "version" : "0.1.0",
+    "name" : "PollyIG"
+  },
+  {
+    "id" : "PollyPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://polly.example.com/StructureDefinition/PollyPatient",
+    "version" : "0.1.0",
+    "name" : "PollyPatient"
+  },
+  {
+    "id" : "occupation",
+    "type" : "StructureDefinition",
+    "url" : "http://polly.example.com/StructureDefinition/occupation",
+    "version" : "0.1.0",
+    "name" : "PollyOccupation"
+  }
+]

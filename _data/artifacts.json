@@ -1,0 +1,1 @@
+{"StructureDefinition-PollyPatient.html":{"type":"StructureDefinition"},"StructureDefinition-occupation.html":{"type":"StructureDefinition"},"Patient-PatientExample.html":{"type":"Patient","example":true,"exampleOf":{"name":"PollyPatient","url":"StructureDefinition-PollyPatient.html"}}}

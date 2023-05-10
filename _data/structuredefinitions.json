@@ -1,0 +1,47 @@
+{
+  "occupation" : {
+    "index" : 0,
+    "url" : "http://polly.example.com/StructureDefinition/occupation",
+    "name" : "PollyOccupation",
+    "title" : "Occupation",
+    "path" : "StructureDefinition-occupation.html",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename" : "Extension",
+    "basepath" : "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "status" : "active",
+    "date" : "Wed May 10 17:43:36 CST 2023",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "polly",
+    "copyright" : null,
+    "description" : "職業",
+    "contexts" : [
+      {
+        "type" : "Element ID",
+        "expression" : "Element"
+      }
+    ],
+    "extension-contexts" : ["Element"]
+  },
+  "PollyPatient" : {
+    "index" : 1,
+    "url" : "http://polly.example.com/StructureDefinition/PollyPatient",
+    "name" : "PollyPatient",
+    "title" : "PollyPatient",
+    "path" : "StructureDefinition-PollyPatient.html",
+    "kind" : "resource",
+    "type" : "Patient",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Patient",
+    "basename" : "Patient",
+    "basepath" : "http://hl7.org/fhir/R4/patient.html",
+    "status" : "active",
+    "date" : "Wed May 10 17:43:36 CST 2023",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "polly",
+    "copyright" : null,
+    "description" : "這是Polly的測試Profile"
+  }
+}
