@@ -19,5 +19,19 @@
     "url" : "http://polly.example.com/StructureDefinition/occupation",
     "version" : "0.1.0",
     "name" : "PollyOccupation"
+  },
+  {
+    "id" : "treatment-intent",
+    "type" : "StructureDefinition",
+    "url" : "http://polly.example.com/StructureDefinition/treatment-intent",
+    "version" : "0.1.0",
+    "name" : "TreatmentIntent"
+  },
+  {
+    "id" : "covid-serverity",
+    "type" : "ValueSet",
+    "url" : "http://polly.example.com/ValueSet/covid-serverity",
+    "version" : "0.1.0",
+    "name" : "CovidServerity"
   }
 ]

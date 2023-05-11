@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="covid-serverity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/Diagnosis Severity</a></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/442452003">442452003</a></td><td>Life threatening......XXX</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://polly.example.com/ValueSet/covid-serverity"/>
+  <version value="0.1.0"/>
+  <name value="CovidServerity"/>
+  <title value="Covid Serverity Code"/>
+  <status value="active"/>
+  <date value="2023-05-11T11:08:24+08:00"/>
+  <publisher value="polly"/>
+  <contact>
+    <name value="polly"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://polly.example.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="polly@example.org"/>
+    </telecom>
+  </contact>
+  <description value="這是Covid Serverity Code"/>
+  <compose>
+    <include>
+      <valueSet value="http://hl7.org/fhir/ValueSet/condition-severity"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="442452003"/>
+        <display value="Life threatening......XXX"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

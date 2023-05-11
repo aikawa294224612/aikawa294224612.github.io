@@ -3,13 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="polly.example"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PollyIG</h2><p>The official URL for this implementation guide is: </p><pre>http://polly.example.com/ImplementationGuide/polly.example</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PollyIG</h2><p>The official URL for this implementation guide is: </p><pre>http://polly.example.com/ImplementationGuide/polly.example</pre><div><p>這是Polly來測試FSH的測試IG</p>
+</div></div>
   </text>
   <url value="http://polly.example.com/ImplementationGuide/polly.example"/>
   <version value="0.1.0"/>
   <name value="PollyIG"/>
+  <title value="Polly的Test IG"/>
   <status value="draft"/>
-  <date value="2023-05-10T17:43:36+08:00"/>
+  <date value="2023-05-11T11:08:24+08:00"/>
   <publisher value="polly"/>
   <contact>
     <name value="polly"/>
@@ -17,7 +19,12 @@
       <system value="url"/>
       <value value="http://polly.example.com"/>
     </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="polly@example.org"/>
+    </telecom>
   </contact>
+  <description value="這是Polly來測試FSH的測試IG"/>
   <packageId value="polly.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -28,6 +35,11 @@
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
     <version value="5.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_core">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.1.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -441,6 +453,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/treatment-intent"/>
+      </reference>
+      <name value="Treatment Intent"/>
+      <description value="The purpose of a medication or procedure."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/covid-serverity"/>
+      </reference>
+      <name value="Covid Serverity Code"/>
+      <description value="這是Covid Serverity Code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -462,8 +496,40 @@
           <valueUrl value="index.html"/>
         </extension>
         <nameUrl value="index.html"/>
-        <title value="Home"/>
+        <title value="首頁"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="implementation.html"/>
+        </extension>
+        <nameUrl value="implementation.html"/>
+        <title value="Implementation"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="examples.html"/>
+        </extension>
+        <nameUrl value="examples.html"/>
+        <title value="範例"/>
+        <generation value="html"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="simpleExamples.html"/>
+          </extension>
+          <nameUrl value="simpleExamples.html"/>
+          <title value="Simple Examples"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="complexExamples.html"/>
+          </extension>
+          <nameUrl value="complexExamples.html"/>
+          <title value="Complex Examples"/>
+          <generation value="html"/>
+        </page>
       </page>
     </page>
     <parameter>

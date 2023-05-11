@@ -16,13 +16,16 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "PollyPatient"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-10T17:43:36+08:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-11T11:08:24+08:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "polly"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "polly" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
        fhir:value [ fhir:v "http://polly.example.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "polly@example.org" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "這是Polly的測試Profile"] ; # 

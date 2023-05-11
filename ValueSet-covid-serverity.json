@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "covid-serverity",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-condition-severity.html\">Condition/Diagnosis Severity</a></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/442452003\">442452003</a></td><td>Life threatening......XXX</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://polly.example.com/ValueSet/covid-serverity",
+  "version" : "0.1.0",
+  "name" : "CovidServerity",
+  "title" : "Covid Serverity Code",
+  "status" : "active",
+  "date" : "2023-05-11T11:08:24+08:00",
+  "publisher" : "polly",
+  "contact" : [{
+    "name" : "polly",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://polly.example.com"
+    },
+    {
+      "system" : "email",
+      "value" : "polly@example.org"
+    }]
+  }],
+  "description" : "這是Covid Serverity Code",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/condition-severity"]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "442452003",
+        "display" : "Life threatening......XXX"
+      }]
+    }]
+  }
+}

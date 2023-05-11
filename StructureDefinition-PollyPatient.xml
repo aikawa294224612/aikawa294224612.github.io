@@ -13,13 +13,17 @@
   <version value="0.1.0"/>
   <name value="PollyPatient"/>
   <status value="active"/>
-  <date value="2023-05-10T17:43:36+08:00"/>
+  <date value="2023-05-11T11:08:24+08:00"/>
   <publisher value="polly"/>
   <contact>
     <name value="polly"/>
     <telecom>
       <system value="url"/>
       <value value="http://polly.example.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="polly@example.org"/>
     </telecom>
   </contact>
   <description value="這是Polly的測試Profile"/>

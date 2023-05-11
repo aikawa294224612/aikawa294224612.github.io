@@ -10,13 +10,17 @@
   "name" : "PollyOccupation",
   "title" : "Occupation",
   "status" : "active",
-  "date" : "2023-05-10T17:43:36+08:00",
+  "date" : "2023-05-11T11:08:24+08:00",
   "publisher" : "polly",
   "contact" : [{
     "name" : "polly",
     "telecom" : [{
       "system" : "url",
       "value" : "http://polly.example.com"
+    },
+    {
+      "system" : "email",
+      "value" : "polly@example.org"
     }]
   }],
   "description" : "職業",

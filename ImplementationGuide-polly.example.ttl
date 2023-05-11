@@ -10,21 +10,26 @@
   fhir:id [ fhir:v "polly.example"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PollyIG</h2><p>The official URL for this implementation guide is: </p><pre>http://polly.example.com/ImplementationGuide/polly.example</pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PollyIG</h2><p>The official URL for this implementation guide is: </p><pre>http://polly.example.com/ImplementationGuide/polly.example</pre><div><p>這是Polly來測試FSH的測試IG</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://polly.example.com/ImplementationGuide/polly.example"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "PollyIG"] ; # 
+  fhir:title [ fhir:v "Polly的Test IG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-05-10T17:43:36+08:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-11T11:08:24+08:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "polly"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "polly" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
        fhir:value [ fhir:v "http://polly.example.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "polly@example.org" ]
      ] )
   ] ) ; # 
+  fhir:description [ fhir:v "這是Polly來測試FSH的測試IG"] ; # 
   fhir:packageId [ fhir:v "polly.example"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
@@ -40,6 +45,14 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
      fhir:version [ fhir:v "5.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_us_core" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.core" ] ;
+     fhir:version [ fhir:v "3.1.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -505,6 +518,30 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://polly.example.com/StructureDefinition/treatment-intent> ;
+         fhir:reference [ fhir:v "StructureDefinition/treatment-intent" ]
+       ] ;
+       fhir:name [ fhir:v "Treatment Intent" ] ;
+       fhir:description [ fhir:v "The purpose of a medication or procedure." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://polly.example.com/ValueSet/covid-serverity> ;
+         fhir:reference [ fhir:v "ValueSet/covid-serverity" ]
+       ] ;
+       fhir:name [ fhir:v "Covid Serverity Code" ] ;
+       fhir:description [ fhir:v "這是Covid Serverity Code" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
@@ -532,8 +569,41 @@
            fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Home" ] ;
+         fhir:title [ fhir:v "首頁" ] ;
          fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "implementation.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "implementation.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Implementation" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "examples.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "examples.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "範例" ] ;
+         fhir:generation [ fhir:v "html" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "simpleExamples.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "simpleExamples.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Simple Examples" ] ;
+           fhir:generation [ fhir:v "html" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "complexExamples.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "complexExamples.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Complex Examples" ] ;
+           fhir:generation [ fhir:v "html" ]
+         ] )
        ] )
      ] ;
      fhir:parameter ( [

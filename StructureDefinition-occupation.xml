@@ -14,13 +14,17 @@
   <name value="PollyOccupation"/>
   <title value="Occupation"/>
   <status value="active"/>
-  <date value="2023-05-10T17:43:36+08:00"/>
+  <date value="2023-05-11T11:08:24+08:00"/>
   <publisher value="polly"/>
   <contact>
     <name value="polly"/>
     <telecom>
       <system value="url"/>
       <value value="http://polly.example.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="polly@example.org"/>
     </telecom>
   </contact>
   <description value="職業"/>
