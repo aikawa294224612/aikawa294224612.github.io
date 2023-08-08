@@ -1,25 +1,87 @@
 {
-  "package": "polly.example",
+  "package": "tsti.example",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
-  "extensions": [
-    {
-      "url": "http://polly.example.com/StructureDefinition/occupation",
-      "title": "Occupation",
-      "types": [
-        "string"
-      ]
-    }
-  ],
+  "extensions": [],
   "profiles": {
+    "Bundle": [
+      {
+        "url": "http://tsti.example.com/StructureDefinition/Bundle-adultcheck",
+        "title": "Bundle - AdultCheck"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://tsti.example.com/StructureDefinition/Composition-adultcheck",
+        "title": "Composition - AdultCheck"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://tsti.example.com/StructureDefinition/Condition-adultcheck",
+        "title": "Condition - AdultCheck"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://tsti.example.com/StructureDefinition/DiagnosticReport-adultcheck",
+        "title": "DiagnosticReport - AdultCheck"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://tsti.example.com/StructureDefinition/Encounter-adultcheck",
+        "title": "Encounter - AdultCheck"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://tsti.example.com/StructureDefinition/ObservationBMI-adultcheck",
+        "title": "Observation BMI - AdultCheck"
+      },
+      {
+        "url": "http://tsti.example.com/StructureDefinition/ObservationDepression-adultcheck",
+        "title": "Observation Depression - AdultCheck"
+      },
+      {
+        "url": "http://tsti.example.com/StructureDefinition/ObservationHeight-adultcheck",
+        "title": "Observation Height - AdultCheck"
+      },
+      {
+        "url": "http://tsti.example.com/StructureDefinition/ObservationLab-adultcheck",
+        "title": "Observation Lab - AdultCheck"
+      },
+      {
+        "url": "http://tsti.example.com/StructureDefinition/ObservationLife-adultcheck",
+        "title": "Observation Life - AdultCheck"
+      },
+      {
+        "url": "http://tsti.example.com/StructureDefinition/ObservationPressure-adultcheck",
+        "title": "Observation Pressure - AdultCheck"
+      },
+      {
+        "url": "http://tsti.example.com/StructureDefinition/ObservationWaist-adultcheck",
+        "title": "Observation Waist - AdultCheck"
+      },
+      {
+        "url": "http://tsti.example.com/StructureDefinition/ObservationWeight-adultcheck",
+        "title": "Observation Weight - AdultCheck"
+      }
+    ],
     "Patient": [
       {
-        "url": "http://polly.example.com/StructureDefinition/PollyPatient",
-        "title": "PollyPatient"
+        "url": "http://tsti.example.com/StructureDefinition/Patient-adultcheck",
+        "title": "Patient - AdultCheck"
       }
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "CapabilityStatement.rest.resource",
+      "CapabilityStatement.rest.resource.interaction",
+      "CapabilityStatement.rest.resource.searchParam",
+      "CapabilityStatement.rest.resource.supportedProfile"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -27,6 +89,7 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
@@ -34,6 +97,19 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
@@ -43,6 +119,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -60,7 +139,7 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://polly.example.com/StructureDefinition/occupation": [
+    "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/person-age": [
       "Patient"
     ]
   }
