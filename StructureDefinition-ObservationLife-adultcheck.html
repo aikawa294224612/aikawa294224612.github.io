@@ -135,7 +135,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">成人健檢實作指引(Adult Check IG) - Local Development build (v0.1.0). See the <a href="http://tsti.example.com/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">成人健檢實作指引(Adult Check IG) - Local Development build (v0.1.0). See the <a href="https://fhirisolationroom.azurehealthcareapis.com/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -219,13 +219,13 @@
 
   </h2>
 
-  <table class="colsd">
+  <table class="colsi">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://tsti.example.com/StructureDefinition/ObservationLife-adultcheck<button data-clipboard-text="http://tsti.example.com/StructureDefinition/ObservationLife-adultcheck" title="Click to copy URL" class="btn-copy"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck<button data-clipboard-text="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck" title="Click to copy URL" class="btn-copy"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button data-clipboard-text="http://tsti.example.com/StructureDefinition/ObservationLife-adultcheck|0.1.0" title="Click to copy versioned URL" class="btn-copy"/></span>
+      <span class="copy-text">0.1.0<button data-clipboard-text="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck|0.1.0" title="Click to copy versioned URL" class="btn-copy"/></span>
       </td>
     </tr>
 
@@ -239,7 +239,7 @@
 
       <td colspan="4">
         
-          Draft
+          Active
           
             as of 2023-07-24
           
@@ -792,7 +792,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       }],
       "<a href="StructureDefinition-ObservationLife-adultcheck.html#Observation.code.text" title="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user" class="dict"><span style="text-decoration: underline">text</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Plain text representation of the concept</span>
     },
-    "<a href="StructureDefinition-ObservationLife-adultcheck.html#Observation.subject" title="The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation (this element must be supported)" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Who and/or what the observation is about</span>
+    "<a href="StructureDefinition-ObservationLife-adultcheck.html#Observation.subject" title="The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation (this element must be supported)" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Who and/or what the observation is about</span>
     "<a href="StructureDefinition-ObservationLife-adultcheck.html#Observation.focus" title="The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus observations in a mother's record.  The focus of an observation could also be an existing condition,  an intervention, the subject's diet,  another observation of the subject,  or a body structure such as tumor or implanted device.   An example use case would be using the Observation resource to capture whether the mother is trained to change her child's tracheostomy tube. In this example, the child is the patient of record and the mother is the focus" class="dict"><span style="text-decoration: underline">focus</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/resource.html">Resource</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">What the observation is about, when it is not about the subject of record</span>
     "<a href="StructureDefinition-ObservationLife-adultcheck.html#Observation.encounter" title="The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made" class="dict"><span style="text-decoration: underline">encounter</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Healthcare event during which this observation is made</span>
     "<a href="StructureDefinition-ObservationLife-adultcheck.html#Observation.effectiveDateTime" title="The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the &quot;physiologically relevant time&quot;. This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself" class="dict"><span style="text-decoration: underline">effectiveDateTime</span></a>" : [ <span style="color: navy"></span>
@@ -879,7 +879,7 @@ Summary
 <ul>
 <li><a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-CodeableConcept-tw.html">TW CodeableConcept <span style="font-size: 8px">(https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/CodeableConcept-tw)</span></a></li>
 <li><a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-Organization-hosp-twcore.html">TW Core Organization Hospital Department <span style="font-size: 8px">(https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Organization-hosp-twcore)</span></a></li>
-<li><a href="StructureDefinition-Patient-adultcheck.html">Patient - AdultCheck <span style="font-size: 8px">(http://tsti.example.com/StructureDefinition/Patient-adultcheck)</span></a></li>
+<li><a href="StructureDefinition-Patient-adultcheck.html">Patient - AdultCheck <span style="font-size: 8px">(https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck)</span></a></li>
 
 </ul>
 
@@ -1377,7 +1377,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       }],
       "<a href="StructureDefinition-ObservationLife-adultcheck.html#Observation.code.text" title="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user" class="dict"><span style="text-decoration: underline">text</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Plain text representation of the concept</span>
     },
-    "<a href="StructureDefinition-ObservationLife-adultcheck.html#Observation.subject" title="The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation (this element must be supported)" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Who and/or what the observation is about</span>
+    "<a href="StructureDefinition-ObservationLife-adultcheck.html#Observation.subject" title="The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation (this element must be supported)" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Who and/or what the observation is about</span>
     "<a href="StructureDefinition-ObservationLife-adultcheck.html#Observation.focus" title="The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus observations in a mother's record.  The focus of an observation could also be an existing condition,  an intervention, the subject's diet,  another observation of the subject,  or a body structure such as tumor or implanted device.   An example use case would be using the Observation resource to capture whether the mother is trained to change her child's tracheostomy tube. In this example, the child is the patient of record and the mother is the focus" class="dict"><span style="text-decoration: underline">focus</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/resource.html">Resource</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">What the observation is about, when it is not about the subject of record</span>
     "<a href="StructureDefinition-ObservationLife-adultcheck.html#Observation.encounter" title="The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made" class="dict"><span style="text-decoration: underline">encounter</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Healthcare event during which this observation is made</span>
     "<a href="StructureDefinition-ObservationLife-adultcheck.html#Observation.effectiveDateTime" title="The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the &quot;physiologically relevant time&quot;. This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself" class="dict"><span style="text-decoration: underline">effectiveDateTime</span></a>" : [ <span style="color: navy"></span>
@@ -1460,7 +1460,7 @@ Summary
 <ul>
 <li><a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-CodeableConcept-tw.html">TW CodeableConcept <span style="font-size: 8px">(https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/CodeableConcept-tw)</span></a></li>
 <li><a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-Organization-hosp-twcore.html">TW Core Organization Hospital Department <span style="font-size: 8px">(https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Organization-hosp-twcore)</span></a></li>
-<li><a href="StructureDefinition-Patient-adultcheck.html">Patient - AdultCheck <span style="font-size: 8px">(http://tsti.example.com/StructureDefinition/Patient-adultcheck)</span></a></li>
+<li><a href="StructureDefinition-Patient-adultcheck.html">Patient - AdultCheck <span style="font-size: 8px">(https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck)</span></a></li>
 
 </ul>
 
@@ -1535,8 +1535,8 @@ Summary
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Polly Peng</a>.  Package tsti.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 7, 2023 17:23+0800">2023-08-07</span>
+        <p><a name="l14093">​</a>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="polly.peng@etatung.com">Polly Peng</a>.  Package tsti.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 10, 2023 13:03+0800">2023-08-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

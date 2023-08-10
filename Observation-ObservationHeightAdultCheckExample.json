@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "ObservationHeightAdultCheckExample",
   "meta" : {
-    "profile" : ["http://tsti.example.com/StructureDefinition/ObservationHeight-adultcheck"]
+    "profile" : ["https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationHeight-adultcheck"]
   },
   "text" : {
     "status" : "generated",

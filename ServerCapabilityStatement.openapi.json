@@ -10,11 +10,11 @@
     "version": "0.1.0",
     "contact": {
       "name": "Polly Peng",
-      "url": "http://example.org/example-publisher"
+      "email": "polly.peng@etatung.com"
     }
   },
   "externalDocs": {
-    "url": "http://tsti.example.com/CapabilityStatement/ServerCapabilityStatement",
+    "url": "https://fhirisolationroom.azurehealthcareapis.com/CapabilityStatement/ServerCapabilityStatement",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {

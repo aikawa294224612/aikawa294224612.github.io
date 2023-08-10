@@ -21,6 +21,10 @@
   margin-top: 4px;
 }
 
+#ig-status {
+  display: inline-block;
+}
+
 #hl7-nav a {
   color: inherit;
 }
@@ -28,6 +32,7 @@
 #hl7-logo {
   float: left;
   margin-left: 6px;
+  width: 10px;
 }
 #hl7-search {
   line-height: 50px;
@@ -55,7 +60,7 @@
 .note-to-balloters::before {
   white-space: pre;
   content: "Note To Balloters\A ";
-  #background-color: yellow;
+  /* background-color: yellow; */
   color: red;
   font-weight: bold;
 }
@@ -68,7 +73,7 @@
 .stu-note::before {
   white-space: pre;
   content: "STU Note\A ";
-  #background-color: yellow;
+  /* #background-color: yellow; */
   color: red;
   font-weight: bold;
 }

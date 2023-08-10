@@ -2,7 +2,7 @@
   "resourceType" : "Encounter",
   "id" : "EncounterAdultCheckExample",
   "meta" : {
-    "profile" : ["http://tsti.example.com/StructureDefinition/Encounter-adultcheck"]
+    "profile" : ["https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck"]
   },
   "text" : {
     "status" : "generated",

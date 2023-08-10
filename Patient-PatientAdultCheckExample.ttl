@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://tsti.example.com/Patient/PatientAdultCheckExample> a fhir:Patient ;
+<https://fhirisolationroom.azurehealthcareapis.com/Patient/PatientAdultCheckExample> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "PatientAdultCheckExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://tsti.example.com/StructureDefinition/Patient-adultcheck"^^xsd:anyURI ;
-       fhir:link <http://tsti.example.com/StructureDefinition/Patient-adultcheck>
+       fhir:v "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck>
      ] )
   ] ; # 
   fhir:text [
@@ -69,7 +69,7 @@
      fhir:city [ fhir:v "臺北市" ]
   ] ) ; # 
   fhir:managingOrganization [
-     fhir:link <http://tsti.example.com/Organization/org-hosp-example> ;
+     fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Organization/org-hosp-example> ;
      fhir:reference [ fhir:v "Organization/org-hosp-example" ]
   ] . # 
 

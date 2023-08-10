@@ -320,7 +320,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","系統的版本—如果相關的話","選擇此代碼時使用的代碼系統版本；請注意，一個維護良好的代碼系統不需要版本報告，因為代碼的意義在不同系統版本中是一致的；然而，不能始終保證這點，當不能保證意義一致時， **必須(SHALL)** 將版本資訊也一併作交換。","如果專門術語沒有明確定義應該使用什麼字串來識別代碼系統的版本，建議使用版本正式發布的日期（用FHIR日期格式表示）作為版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.7","./codeSystemVersion"
 "Condition.code.coding:sct.code","Condition.code.coding.code","","","",0,1,"Y","","Y","code {[]} {[]}
-","系統定義的語法之符號","系統定義的語法之符號；符號可能是一個預先定義的代碼，也可能是代碼系統定義的語法中的表達式（如後組合配對／後組合式）。","","需要參照系統中的一個特定代碼","","","","","","","",,"required","","http://tsti.example.com/ValueSet/adultcheck-code","",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","系統定義的語法之符號","系統定義的語法之符號；符號可能是一個預先定義的代碼，也可能是代碼系統定義的語法中的表達式（如後組合配對／後組合式）。","","需要參照系統中的一個特定代碼","","","","","","","",,"required","","https://fhirisolationroom.azurehealthcareapis.com/ValueSet/adultcheck-code","",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1","./code"
 "Condition.code.coding:sct.display","Condition.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
 ","由系統定義的表示法","遵循系統的規則以呈現代碼含義的表示法","","需要能為不了解此系統的讀者呈現可讀的代碼含義","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -336,7 +336,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CE/CNE/CWE","n/a","CD"
 "Condition.subject","Condition.subject","","patient
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","擁有此疾病史的個案是誰","表示與此病情、問題或診斷紀錄相關的病人或實體集合（Group resource）","","實體集合（Group resource）通常用於獸醫或公共衛生的案例","","","","","","","",,,,,"",,,,"Condition.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","PID-3",".participation[typeCode=SBJ].role[classCode=PAT]","FiveWs.subject[x]","FiveWs.subject"
 "Condition.encounter","Condition.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Encounter-twcore]]}

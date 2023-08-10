@@ -282,7 +282,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
 "DiagnosticReport.subject","DiagnosticReport.subject","","Patient
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","報告的對象—通常但不總是病人","報告的對象體，通常但不總是病人。然而，診斷服務也對從其他各種來源收集的檢體進行分析。",""," **必須(SHALL)** 知道對象的背景","","","","","","","",,,,,"",,,,"DiagnosticReport.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","PID-3 (no HL7 v2 mapping for Group or Device)","participation[typeCode=SBJ]","FiveWs.subject[x]","FiveWs.subject"
 "DiagnosticReport.encounter","DiagnosticReport.encounter","","Context

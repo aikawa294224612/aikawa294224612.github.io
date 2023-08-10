@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://tsti.example.com/CapabilityStatement/ServerCapabilityStatement> a fhir:CapabilityStatement ;
+<https://fhirisolationroom.azurehealthcareapis.com/CapabilityStatement/ServerCapabilityStatement> a fhir:CapabilityStatement ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ServerCapabilityStatement"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>成人健檢實作指引(Adult Check IG)伺服器之能力聲明</h2><div><p>成人健檢實作指引(Adult Check IG)伺服端(Server)之能力聲明</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>The TW Core Server <strong>SHALL</strong>:</p>\n<ol>\n<li>Support all profiles defined in this Implementation Guide..</li>\n<li>Implement the RESTful behavior according to the FHIR specification.</li>\n<li>Return the following response classes:\n<ul>\n<li>(Status 400): invalid parameter</li>\n<li>(Status 401/4xx): unauthorized request</li>\n<li>(Status 403): insufficient scope</li>\n<li>(Status 404): unknown resource</li>\n<li>(Status 410): deleted resource.</li>\n</ul>\n</li>\n<li>Support json source formats for all TW Core Server interactions.</li>\n<li>Identify the TW Core Server profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li>\n<li>Support the searchParameters on each profile  individually and in combination.\n1.Support forward and reverse chaining on all search parameters that specify the 'chain' property</li>\n</ol>\n<p>TW Core Server <strong>SHOULD</strong>:</p>\n<ol>\n<li>Support xml source formats for all TW Core Server interactions.</li>\n</ol>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"PATCH a new resource version (patch interaction)\">Patch</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th><th><b title=\"DELETE a resource (delete interaction)\">Delete</b></th></tr><tr><td>Patient</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/R4/shareablemeasure.html\">Shareable Measure</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Encounter</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Observation</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Observation</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Bundle</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/R4/shareablemeasure.html\">Shareable Measure</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr></table></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://tsti.example.com/CapabilityStatement/ServerCapabilityStatement"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://fhirisolationroom.azurehealthcareapis.com/CapabilityStatement/ServerCapabilityStatement"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "成人健檢實作指引(Adult Check IG)伺服器之能力聲明"] ; # 
   fhir:title [ fhir:v "此CapabilityStatement 說明成人健檢伺服器能力聲明"] ; # 
@@ -22,8 +22,8 @@
   fhir:contact ( [
      fhir:name [ fhir:v "Polly Peng" ] ;
      fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "polly.peng@etatung.com" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "成人健檢實作指引(Adult Check IG)伺服端(Server)之能力聲明"] ; # 

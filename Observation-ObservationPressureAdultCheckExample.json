@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "ObservationPressureAdultCheckExample",
   "meta" : {
-    "profile" : ["http://tsti.example.com/StructureDefinition/ObservationPressure-adultcheck"]
+    "profile" : ["https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationPressure-adultcheck"]
   },
   "text" : {
     "status" : "generated",

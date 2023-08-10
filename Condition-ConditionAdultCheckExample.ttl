@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://tsti.example.com/Condition/ConditionAdultCheckExample> a fhir:Condition ;
+<https://fhirisolationroom.azurehealthcareapis.com/Condition/ConditionAdultCheckExample> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ConditionAdultCheckExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://tsti.example.com/StructureDefinition/Condition-adultcheck"^^xsd:anyURI ;
-       fhir:link <http://tsti.example.com/StructureDefinition/Condition-adultcheck>
+       fhir:v "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck>
      ] )
   ] ; # 
   fhir:text [
@@ -81,7 +81,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://tsti.example.com/Patient/pat-example> ;
+     fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Patient/pat-example> ;
      fhir:reference [ fhir:v "Patient/pat-example" ]
   ] ; # 
   fhir:recordedDate [ fhir:v "2022-08-05T17:00:14-05:00"^^xsd:dateTime] . # 

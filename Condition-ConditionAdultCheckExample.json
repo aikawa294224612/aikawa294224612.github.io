@@ -2,7 +2,7 @@
   "resourceType" : "Condition",
   "id" : "ConditionAdultCheckExample",
   "meta" : {
-    "profile" : ["http://tsti.example.com/StructureDefinition/Condition-adultcheck"]
+    "profile" : ["https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck"]
   },
   "text" : {
     "status" : "generated",

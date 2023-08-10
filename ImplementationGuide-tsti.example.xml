@@ -3,21 +3,21 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="tsti.example"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>AdultCheckIG</h2><p>The official URL for this implementation guide is: </p><pre>http://tsti.example.com/ImplementationGuide/tsti.example</pre><div><p>成人健檢實作指引(Adult Check IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..<em>、1..1或1..</em>）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>AdultCheckIG</h2><p>The official URL for this implementation guide is: </p><pre>https://fhirisolationroom.azurehealthcareapis.com/ImplementationGuide/tsti.example</pre><div><p>成人健檢實作指引(Adult Check IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..<em>、1..1或1..</em>）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。</p>
 </div></div>
   </text>
-  <url value="http://tsti.example.com/ImplementationGuide/tsti.example"/>
+  <url value="https://fhirisolationroom.azurehealthcareapis.com/ImplementationGuide/tsti.example"/>
   <version value="0.1.0"/>
   <name value="AdultCheckIG"/>
   <title value="成人健檢實作指引(Adult Check IG)"/>
-  <status value="draft"/>
-  <date value="2023-08-07T17:23:39+08:00"/>
+  <status value="active"/>
+  <date value="2023-08-10T13:03:13+08:00"/>
   <publisher value="Polly Peng"/>
   <contact>
     <name value="Polly Peng"/>
     <telecom>
-      <system value="url"/>
-      <value value="http://example.org/example-publisher"/>
+      <system value="email"/>
+      <value value="polly.peng@etatung.com"/>
     </telecom>
   </contact>
   <description value="成人健檢實作指引(Adult Check IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。"/>
@@ -123,7 +123,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://tsti.example.com/history.html"/>
+        <valueString value="https://fhirisolationroom.azurehealthcareapis.com/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -318,7 +318,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://tsti.example.com/history.html"/>
+        <valueString value="https://fhirisolationroom.azurehealthcareapis.com/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -453,7 +453,7 @@
       </reference>
       <name value="BundleAdultCheckExample"/>
       <description value="成人健檢整體問卷資料範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/Bundle-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Bundle-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -475,7 +475,7 @@
       </reference>
       <name value="CompositionAdultCheckExample"/>
       <description value="成人健檢整體問卷資料範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/Composition-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -497,7 +497,7 @@
       </reference>
       <name value="ConditionAdultCheckExample"/>
       <description value="成人健檢疾病史範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/Condition-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -519,7 +519,7 @@
       </reference>
       <name value="DiagnosticReportAdultCheckExample"/>
       <description value="腎功能檢查結果判讀範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/DiagnosticReport-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -541,7 +541,7 @@
       </reference>
       <name value="EncounterAdultCheckExample"/>
       <description value="成人健檢兩階段檢查紀錄範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/Encounter-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -640,7 +640,7 @@
       </reference>
       <name value="ObservationBMIAdultCheckExample"/>
       <description value="成人健檢BMI紀錄範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/ObservationBMI-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -651,7 +651,7 @@
       </reference>
       <name value="ObservationDepressionAdultCheckExample"/>
       <description value="成人健檢憂鬱檢測範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/ObservationDepression-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationDepression-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -662,7 +662,7 @@
       </reference>
       <name value="ObservationHeightAdultCheckExample"/>
       <description value="成人健檢身高紀錄範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/ObservationHeight-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationHeight-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -673,7 +673,7 @@
       </reference>
       <name value="ObservationLabAdultCheckExample"/>
       <description value="成人健檢檢驗資訊範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/ObservationLab-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -684,7 +684,7 @@
       </reference>
       <name value="ObservationLifeAdultCheckExample"/>
       <description value="成人健檢生活史項目範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/ObservationLife-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -695,7 +695,7 @@
       </reference>
       <name value="ObservationPressureAdultCheckExample"/>
       <description value="成人健檢血壓紀錄範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/ObservationPressure-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationPressure-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -706,7 +706,7 @@
       </reference>
       <name value="ObservationWaistAdultCheckExample"/>
       <description value="成人健檢腰圍紀錄範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/ObservationWaist-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationWaist-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -717,7 +717,7 @@
       </reference>
       <name value="ObservationWeightAdultCheckExample"/>
       <description value="成人健檢體重紀錄範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/ObservationWeight-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationWeight-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -739,7 +739,7 @@
       </reference>
       <name value="PatientAdultCheckExample"/>
       <description value="成人健檢病患基本資料範例"/>
-      <exampleCanonical value="http://tsti.example.com/StructureDefinition/Patient-adultcheck"/>
+      <exampleCanonical value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

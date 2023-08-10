@@ -3,7 +3,7 @@
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="DiagnosticReportAdultCheckExample"/>
   <meta>
-    <profile value="http://tsti.example.com/StructureDefinition/DiagnosticReport-adultcheck"/>
+    <profile value="https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw 06003C}">尿蛋白</span> (<span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2022-08-01 17:00:14-0500</td></tr><tr><td>Reported</td><td>2022-08-02 17:00:14-0500</td></tr><tr><td>Identifiers:</td><td> 全國的個人識別碼: A123456789 (use: OFFICIAL) Medical record number: 8862168 (use: OFFICIAL) HOI: 0123456789 (use: OFFICIAL) Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</td></tr></table><p><b>Report Details</b></p><p>建議進一步檢查</p></div>

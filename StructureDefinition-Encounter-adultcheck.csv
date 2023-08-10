@@ -360,7 +360,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD","CE/CNE/CWE"
 "Encounter.subject","Encounter.subject","","patient
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","在場就醫的病人或實體集合（Group）","在場就醫的病人或實體集合（Group）","雖然就醫總是關於病人，但在所有的使用情境中，病人實際上可能並不為人所知及可能有一群病人是匿名的（例如：匿名酗酒者的團體治療中—就醫紀錄是以人數/工作人員數計費，而具體病人的情境並不重要）；或者在獸醫照護中，一群羊接受治療（動物沒有被單獨追蹤）。","","","","","","","","",,,,,"",,,,"Encounter.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject",".participation[typeCode=SBJ]/role[classCode=PAT]","FiveWs.subject[x]","FiveWs.subject","PID-3"
 "Encounter.episodeOfCare","Encounter.episodeOfCare","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/EpisodeOfCare]]}

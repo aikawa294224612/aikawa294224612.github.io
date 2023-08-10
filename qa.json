@@ -1,9 +1,9 @@
 {
-  "url" : "http://tsti.example.com/ImplementationGuide/tsti.example",
+  "url" : "https://fhirisolationroom.azurehealthcareapis.com/ImplementationGuide/tsti.example",
   "name" : "AdultCheckIG",
   "package-id" : "tsti.example",
   "ig-ver" : "0.1.0",
-  "date" : "Mon, 07 Aug, 2023 17:23:39 +0800",
+  "date" : "Thu, 10 Aug, 2023 13:03:13 +0800",
   "errs" : 262,
   "warnings" : 19,
   "hints" : 44,

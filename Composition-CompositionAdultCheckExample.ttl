@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://tsti.example.com/Composition/CompositionAdultCheckExample> a fhir:Composition ;
+<https://fhirisolationroom.azurehealthcareapis.com/Composition/CompositionAdultCheckExample> a fhir:Composition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "CompositionAdultCheckExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://tsti.example.com/StructureDefinition/Composition-adultcheck"^^xsd:anyURI ;
-       fhir:link <http://tsti.example.com/StructureDefinition/Composition-adultcheck>
+       fhir:v "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck>
      ] )
   ] ; # 
   fhir:text [
@@ -40,19 +40,19 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://tsti.example.com/Patient/pat-example> ;
+     fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Patient/pat-example> ;
      fhir:reference [ fhir:v "Patient/pat-example" ]
   ] ; # 
   fhir:encounter [
-     fhir:link <http://tsti.example.com/Encounter/encounter-example> ;
+     fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Encounter/encounter-example> ;
      fhir:reference [ fhir:v "Encounter/encounter-example" ]
   ] ; # 
   fhir:date [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
   fhir:author ( [
-     fhir:link <http://tsti.example.com/Organization/organ-example1> ;
+     fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Organization/organ-example1> ;
      fhir:reference [ fhir:v "Organization/organ-example1" ]
   ] [
-     fhir:link <http://tsti.example.com/Organization/organ-example2> ;
+     fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Organization/organ-example2> ;
      fhir:reference [ fhir:v "Organization/organ-example2" ]
   ] ) ; # 
   fhir:title [ fhir:v "成人健康檢查問卷"] ; # 
@@ -67,7 +67,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Condition/bp-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Condition/bp-example> ;
        fhir:reference [ fhir:v "Condition/bp-example" ]
      ] )
   ] [
@@ -81,7 +81,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Condition/db-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Condition/db-example> ;
        fhir:reference [ fhir:v "Condition/db-example" ]
      ] )
   ] [
@@ -95,7 +95,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Condition/bg-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Condition/bg-example> ;
        fhir:reference [ fhir:v "Condition/bg-example" ]
      ] )
   ] [
@@ -109,7 +109,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Condition/cd-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Condition/cd-example> ;
        fhir:reference [ fhir:v "Condition/cd-example" ]
      ] )
   ] [
@@ -123,7 +123,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Condition/sd-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Condition/sd-example> ;
        fhir:reference [ fhir:v "Condition/sd-example" ]
      ] )
   ] [
@@ -137,7 +137,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Condition/kd-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Condition/kd-example> ;
        fhir:reference [ fhir:v "Condition/kd-example" ]
      ] )
   ] [
@@ -151,7 +151,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/height-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/height-example> ;
        fhir:reference [ fhir:v "Observation/height-example" ]
      ] )
   ] [
@@ -165,7 +165,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/weight-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/weight-example> ;
        fhir:reference [ fhir:v "Observation/weight-example" ]
      ] )
   ] [
@@ -179,7 +179,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/bmi-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/bmi-example> ;
        fhir:reference [ fhir:v "Observation/bmi-example" ]
      ] )
   ] [
@@ -193,7 +193,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/bloodtype-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/bloodtype-example> ;
        fhir:reference [ fhir:v "Observation/bloodtype-example" ]
      ] )
   ] [
@@ -207,7 +207,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/waist-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/waist-example> ;
        fhir:reference [ fhir:v "Observation/waist-example" ]
      ] )
   ] [
@@ -221,7 +221,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/lab-protein-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/lab-protein-example> ;
        fhir:reference [ fhir:v "Observation/lab-protein-example" ]
      ] )
   ] [
@@ -235,7 +235,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/lab-sugar-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/lab-sugar-example> ;
        fhir:reference [ fhir:v "Observation/lab-sugar-example" ]
      ] )
   ] [
@@ -249,7 +249,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/lab-cholesterol-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/lab-cholesterol-example> ;
        fhir:reference [ fhir:v "Observation/lab-cholesterol-example" ]
      ] )
   ] [
@@ -263,7 +263,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/lab-triglycerides-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/lab-triglycerides-example> ;
        fhir:reference [ fhir:v "Observation/lab-triglycerides-example" ]
      ] )
   ] [
@@ -277,7 +277,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/lab-low-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/lab-low-example> ;
        fhir:reference [ fhir:v "Observation/lab-low-example" ]
      ] )
   ] [
@@ -291,7 +291,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/lab-high-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/lab-high-example> ;
        fhir:reference [ fhir:v "Observation/lab-high-example" ]
      ] )
   ] [
@@ -305,7 +305,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/lab-got-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/lab-got-example> ;
        fhir:reference [ fhir:v "Observation/lab-got-example" ]
      ] )
   ] [
@@ -319,7 +319,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/lab-gpt-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/lab-gpt-example> ;
        fhir:reference [ fhir:v "Observation/lab-gpt-example" ]
      ] )
   ] [
@@ -333,7 +333,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/lab-creatinine-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/lab-creatinine-example> ;
        fhir:reference [ fhir:v "Observation/lab-creatinine-example" ]
      ] )
   ] [
@@ -347,7 +347,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/lab-glomerulus-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/lab-glomerulus-example> ;
        fhir:reference [ fhir:v "Observation/lab-glomerulus-example" ]
      ] )
   ] [
@@ -361,7 +361,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/lab-b-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/lab-b-example> ;
        fhir:reference [ fhir:v "Observation/lab-b-example" ]
      ] )
   ] [
@@ -375,7 +375,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/lab-c-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/lab-c-example> ;
        fhir:reference [ fhir:v "Observation/lab-c-example" ]
      ] )
   ] [
@@ -389,7 +389,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/depress-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/depress-example> ;
        fhir:reference [ fhir:v "Observation/depress-example" ]
      ] )
   ] [
@@ -403,7 +403,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/history-smoke-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/history-smoke-example> ;
        fhir:reference [ fhir:v "Observation/history-smoke-example" ]
      ] )
   ] [
@@ -417,7 +417,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/history-liquor-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/history-liquor-example> ;
        fhir:reference [ fhir:v "Observation/history-liquor-example" ]
      ] )
   ] [
@@ -431,7 +431,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/history-nut-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/history-nut-example> ;
        fhir:reference [ fhir:v "Observation/history-nut-example" ]
      ] )
   ] [
@@ -445,7 +445,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/history-exercise-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/history-exercise-example> ;
        fhir:reference [ fhir:v "Observation/history-exercise-example" ]
      ] )
   ] [
@@ -459,7 +459,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/con-smoke-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/con-smoke-example> ;
        fhir:reference [ fhir:v "Observation/con-smoke-example" ]
      ] )
   ] [
@@ -473,7 +473,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/con-liquor-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/con-liquor-example> ;
        fhir:reference [ fhir:v "Observation/con-liquor-example" ]
      ] )
   ] [
@@ -487,7 +487,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/con-nut-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/con-nut-example> ;
        fhir:reference [ fhir:v "Observation/con-nut-example" ]
      ] )
   ] [
@@ -501,7 +501,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/con-exercise-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/con-exercise-example> ;
        fhir:reference [ fhir:v "Observation/con-exercise-example" ]
      ] )
   ] [
@@ -515,7 +515,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/con-weight-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/con-weight-example> ;
        fhir:reference [ fhir:v "Observation/con-weight-example" ]
      ] )
   ] [
@@ -529,7 +529,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/con-diet-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/con-diet-example> ;
        fhir:reference [ fhir:v "Observation/con-diet-example" ]
      ] )
   ] [
@@ -543,7 +543,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/con-accident-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/con-accident-example> ;
        fhir:reference [ fhir:v "Observation/con-accident-example" ]
      ] )
   ] [
@@ -557,7 +557,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/con-oral-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/con-oral-example> ;
        fhir:reference [ fhir:v "Observation/con-oral-example" ]
      ] )
   ] [
@@ -571,7 +571,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/Observation/check-bc-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Observation/check-bc-example> ;
        fhir:reference [ fhir:v "Observation/check-bc-example" ]
      ] )
   ] [
@@ -585,7 +585,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/DiagnosticReport/diag-bp-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/DiagnosticReport/diag-bp-example> ;
        fhir:reference [ fhir:v "DiagnosticReport/diag-bp-example" ]
      ] )
   ] [
@@ -599,7 +599,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/DiagnosticReport/diag-sugar-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/DiagnosticReport/diag-sugar-example> ;
        fhir:reference [ fhir:v "DiagnosticReport/diag-sugar-example" ]
      ] )
   ] [
@@ -613,7 +613,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/DiagnosticReport/diag-bg-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/DiagnosticReport/diag-bg-example> ;
        fhir:reference [ fhir:v "DiagnosticReport/diag-bg-example" ]
      ] )
   ] [
@@ -627,7 +627,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/DiagnosticReport/diag-kid-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/DiagnosticReport/diag-kid-example> ;
        fhir:reference [ fhir:v "DiagnosticReport/diag-kid-example" ]
      ] )
   ] [
@@ -641,7 +641,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/DiagnosticReport/diag-liver-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/DiagnosticReport/diag-liver-example> ;
        fhir:reference [ fhir:v "DiagnosticReport/diag-liver-example" ]
      ] )
   ] [
@@ -655,7 +655,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/DiagnosticReport/diag-metabolic-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/DiagnosticReport/diag-metabolic-example> ;
        fhir:reference [ fhir:v "DiagnosticReport/diag-metabolic-example" ]
      ] )
   ] [
@@ -669,7 +669,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/DiagnosticReport/diag-b-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/DiagnosticReport/diag-b-example> ;
        fhir:reference [ fhir:v "DiagnosticReport/diag-b-example" ]
      ] )
   ] [
@@ -683,7 +683,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/DiagnosticReport/diag-c-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/DiagnosticReport/diag-c-example> ;
        fhir:reference [ fhir:v "DiagnosticReport/diag-c-example" ]
      ] )
   ] [
@@ -697,7 +697,7 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <http://tsti.example.com/DiagnosticReport/diag-depress-example> ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/DiagnosticReport/diag-depress-example> ;
        fhir:reference [ fhir:v "DiagnosticReport/diag-depress-example" ]
      ] )
   ] ) . # 

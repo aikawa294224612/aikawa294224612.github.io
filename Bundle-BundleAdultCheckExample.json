@@ -2,7 +2,7 @@
   "resourceType" : "Bundle",
   "id" : "BundleAdultCheckExample",
   "meta" : {
-    "profile" : ["http://tsti.example.com/StructureDefinition/Bundle-adultcheck"]
+    "profile" : ["https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Bundle-adultcheck"]
   },
   "identifier" : {
     "use" : "official",
@@ -22,7 +22,7 @@
       "resourceType" : "Composition",
       "id" : "CompositionAdultCheckExample",
       "meta" : {
-        "profile" : ["http://tsti.example.com/StructureDefinition/Composition-adultcheck"]
+        "profile" : ["https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck"]
       },
       "text" : {
         "status" : "generated",

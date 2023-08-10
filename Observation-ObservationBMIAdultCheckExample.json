@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "ObservationBMIAdultCheckExample",
   "meta" : {
-    "profile" : ["http://tsti.example.com/StructureDefinition/ObservationBMI-adultcheck"]
+    "profile" : ["https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck"]
   },
   "text" : {
     "status" : "generated",

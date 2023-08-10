@@ -2,7 +2,7 @@
   "resourceType" : "DiagnosticReport",
   "id" : "DiagnosticReportAdultCheckExample",
   "meta" : {
-    "profile" : ["http://tsti.example.com/StructureDefinition/DiagnosticReport-adultcheck"]
+    "profile" : ["https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck"]
   },
   "text" : {
     "status" : "generated",

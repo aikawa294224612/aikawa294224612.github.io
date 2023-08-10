@@ -2,126 +2,126 @@
   {
     "id" : "ServerCapabilityStatement",
     "type" : "CapabilityStatement",
-    "url" : "http://tsti.example.com/CapabilityStatement/ServerCapabilityStatement",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/CapabilityStatement/ServerCapabilityStatement",
     "version" : "0.1.0",
     "name" : "成人健檢實作指引(Adult Check IG)伺服器之能力聲明"
   },
   {
     "id" : "tsti.example",
     "type" : "ImplementationGuide",
-    "url" : "http://tsti.example.com/ImplementationGuide/tsti.example",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/ImplementationGuide/tsti.example",
     "version" : "0.1.0",
     "name" : "AdultCheckIG"
   },
   {
     "id" : "Bundle-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/Bundle-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Bundle-adultcheck",
     "version" : "0.1.0",
     "name" : "BundleAdultCheck"
   },
   {
     "id" : "Composition-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/Composition-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck",
     "version" : "0.1.0",
     "name" : "CompositionAdultCheck"
   },
   {
     "id" : "Condition-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/Condition-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck",
     "version" : "0.1.0",
     "name" : "ConditionAdultCheck"
   },
   {
     "id" : "DiagnosticReport-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/DiagnosticReport-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck",
     "version" : "0.1.0",
     "name" : "DiagnosticReportAdultCheck"
   },
   {
     "id" : "Encounter-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/Encounter-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck",
     "version" : "0.1.0",
     "name" : "EncounterAdultCheck"
   },
   {
     "id" : "ObservationBMI-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/ObservationBMI-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck",
     "version" : "0.1.0",
     "name" : "ObservationBMIAdultCheck"
   },
   {
     "id" : "ObservationDepression-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/ObservationDepression-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationDepression-adultcheck",
     "version" : "0.1.0",
     "name" : "ObservationDepressionAdultCheck"
   },
   {
     "id" : "ObservationHeight-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/ObservationHeight-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationHeight-adultcheck",
     "version" : "0.1.0",
     "name" : "ObservationHeightAdultCheck"
   },
   {
     "id" : "ObservationLab-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/ObservationLab-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck",
     "version" : "0.1.0",
     "name" : "ObservationLabAdultCheck"
   },
   {
     "id" : "ObservationLife-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/ObservationLife-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck",
     "version" : "0.1.0",
     "name" : "ObservationLifeAdultCheck"
   },
   {
     "id" : "ObservationPressure-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/ObservationPressure-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationPressure-adultcheck",
     "version" : "0.1.0",
     "name" : "ObservationPressureAdultCheck"
   },
   {
     "id" : "ObservationWaist-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/ObservationWaist-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationWaist-adultcheck",
     "version" : "0.1.0",
     "name" : "ObservationWaistAdultCheck"
   },
   {
     "id" : "ObservationWeight-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/ObservationWeight-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationWeight-adultcheck",
     "version" : "0.1.0",
     "name" : "ObservationWeightAdultCheck"
   },
   {
     "id" : "Patient-adultcheck",
     "type" : "StructureDefinition",
-    "url" : "http://tsti.example.com/StructureDefinition/Patient-adultcheck",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck",
     "version" : "0.1.0",
     "name" : "PatientAdultCheck"
   },
   {
     "id" : "adultcheck-code",
     "type" : "ValueSet",
-    "url" : "http://tsti.example.com/ValueSet/adultcheck-code",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/ValueSet/adultcheck-code",
     "version" : "0.1.0",
     "name" : "ValueSet-adultcheck-code"
   },
   {
     "id" : "adultcheck-lifecode",
     "type" : "ValueSet",
-    "url" : "http://tsti.example.com/ValueSet/adultcheck-lifecode",
+    "url" : "https://fhirisolationroom.azurehealthcareapis.com/ValueSet/adultcheck-lifecode",
     "version" : "0.1.0",
     "name" : "ValueSet_adultcheck-lifecode"
   }

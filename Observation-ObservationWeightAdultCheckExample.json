@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "ObservationWeightAdultCheckExample",
   "meta" : {
-    "profile" : ["http://tsti.example.com/StructureDefinition/ObservationWeight-adultcheck"]
+    "profile" : ["https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationWeight-adultcheck"]
   },
   "text" : {
     "status" : "generated",

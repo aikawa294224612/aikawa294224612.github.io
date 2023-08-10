@@ -6,71 +6,71 @@
   "profiles": {
     "Bundle": [
       {
-        "url": "http://tsti.example.com/StructureDefinition/Bundle-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Bundle-adultcheck",
         "title": "Bundle - AdultCheck"
       }
     ],
     "Composition": [
       {
-        "url": "http://tsti.example.com/StructureDefinition/Composition-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck",
         "title": "Composition - AdultCheck"
       }
     ],
     "Condition": [
       {
-        "url": "http://tsti.example.com/StructureDefinition/Condition-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck",
         "title": "Condition - AdultCheck"
       }
     ],
     "DiagnosticReport": [
       {
-        "url": "http://tsti.example.com/StructureDefinition/DiagnosticReport-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck",
         "title": "DiagnosticReport - AdultCheck"
       }
     ],
     "Encounter": [
       {
-        "url": "http://tsti.example.com/StructureDefinition/Encounter-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck",
         "title": "Encounter - AdultCheck"
       }
     ],
     "Observation": [
       {
-        "url": "http://tsti.example.com/StructureDefinition/ObservationBMI-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck",
         "title": "Observation BMI - AdultCheck"
       },
       {
-        "url": "http://tsti.example.com/StructureDefinition/ObservationDepression-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationDepression-adultcheck",
         "title": "Observation Depression - AdultCheck"
       },
       {
-        "url": "http://tsti.example.com/StructureDefinition/ObservationHeight-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationHeight-adultcheck",
         "title": "Observation Height - AdultCheck"
       },
       {
-        "url": "http://tsti.example.com/StructureDefinition/ObservationLab-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck",
         "title": "Observation Lab - AdultCheck"
       },
       {
-        "url": "http://tsti.example.com/StructureDefinition/ObservationLife-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck",
         "title": "Observation Life - AdultCheck"
       },
       {
-        "url": "http://tsti.example.com/StructureDefinition/ObservationPressure-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationPressure-adultcheck",
         "title": "Observation Pressure - AdultCheck"
       },
       {
-        "url": "http://tsti.example.com/StructureDefinition/ObservationWaist-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationWaist-adultcheck",
         "title": "Observation Waist - AdultCheck"
       },
       {
-        "url": "http://tsti.example.com/StructureDefinition/ObservationWeight-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/ObservationWeight-adultcheck",
         "title": "Observation Weight - AdultCheck"
       }
     ],
     "Patient": [
       {
-        "url": "http://tsti.example.com/StructureDefinition/Patient-adultcheck",
+        "url": "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck",
         "title": "Patient - AdultCheck"
       }
     ]

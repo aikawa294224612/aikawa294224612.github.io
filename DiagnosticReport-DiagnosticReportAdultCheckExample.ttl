@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://tsti.example.com/DiagnosticReport/DiagnosticReportAdultCheckExample> a fhir:DiagnosticReport ;
+<https://fhirisolationroom.azurehealthcareapis.com/DiagnosticReport/DiagnosticReportAdultCheckExample> a fhir:DiagnosticReport ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "DiagnosticReportAdultCheckExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://tsti.example.com/StructureDefinition/DiagnosticReport-adultcheck"^^xsd:anyURI ;
-       fhir:link <http://tsti.example.com/StructureDefinition/DiagnosticReport-adultcheck>
+       fhir:v "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck>
      ] )
   ] ; # 
   fhir:text [
@@ -75,17 +75,17 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://tsti.example.com/Patient/pat-example> ;
+     fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Patient/pat-example> ;
      fhir:reference [ fhir:v "Patient/pat-example" ]
   ] ; # 
   fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
   fhir:issued [ fhir:v "2022-08-02T17:00:14-05:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <http://tsti.example.com/Organization/organ-example> ;
+     fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Organization/organ-example> ;
      fhir:reference [ fhir:v "Organization/organ-example" ]
   ] ) ; # 
   fhir:resultsInterpreter ( [
-     fhir:link <http://tsti.example.com/Organization/organ-example> ;
+     fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Organization/organ-example> ;
      fhir:reference [ fhir:v "Organization/organ-example" ]
   ] ) ; # 
   fhir:conclusion [ fhir:v "建議進一步檢查"] . # 

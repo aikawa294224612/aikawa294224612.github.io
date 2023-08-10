@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://tsti.example.com/Encounter/EncounterAdultCheckExample> a fhir:Encounter ;
+<https://fhirisolationroom.azurehealthcareapis.com/Encounter/EncounterAdultCheckExample> a fhir:Encounter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "EncounterAdultCheckExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://tsti.example.com/StructureDefinition/Encounter-adultcheck"^^xsd:anyURI ;
-       fhir:link <http://tsti.example.com/StructureDefinition/Encounter-adultcheck>
+       fhir:v "https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck>
      ] )
   ] ; # 
   fhir:text [
@@ -82,11 +82,11 @@
      fhir:text [ fhir:v "成人健檢" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://tsti.example.com/Patient/pat-example> ;
+     fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Patient/pat-example> ;
      fhir:reference [ fhir:v "Patient/pat-example" ]
   ] ; # 
   fhir:serviceProvider [
-     fhir:link <http://tsti.example.com/Organization/organ-example> ;
+     fhir:link <https://fhirisolationroom.azurehealthcareapis.com/Organization/organ-example> ;
      fhir:reference [ fhir:v "Organization/organ-example" ]
   ] . # 
 

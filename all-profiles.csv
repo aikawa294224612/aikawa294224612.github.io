@@ -263,7 +263,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle-adultcheck","Bundle.entry:composition.resource","Bundle.entry.resource","","","",1,1,"Y","","","Composition {[CanonicalType[http://tsti.example.com/StructureDefinition/Composition-adultcheck]]} {[]}
+"Bundle-adultcheck","Bundle.entry:composition.resource","Bundle.entry.resource","","","",1,1,"Y","","","Composition {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck]]} {[]}
 ","A set of resources composed into a single coherent clinical statement with clinical attestation","A set of healthcare-related information that is assembled together into a single logical package that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. A Composition defines the structure and narrative content necessary for a document. However, a Composition alone does not constitute a document. Rather, the Composition must be the first entry in a Bundle where Bundle.type=document, and any other resources referenced from Composition must be included as subsequent entries in the Bundle (for example Patient, Practitioner, Encounter, etc.).","While the focus of this specification is on patient-specific clinical statements, this resource can also apply to other healthcare-related statements such as study protocol designs, healthcare invoices and other activities that are not necessarily patient-specific or clinical.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
 dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}"
 "Bundle-adultcheck","Bundle.entry:composition.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
@@ -498,10 +498,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Composition-adultcheck","Composition.category","Composition.category","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Categorization of Composition","A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type.","This is a metadata field from [XDS/MHD](http://wiki.ihe.net/index.php?title=Mobile_access_to_Health_Documents_(MHD)).","Helps humans to assess whether the composition is of interest when viewing an index of compositions or documents.","","","","","","","",,"example","High-level kind of a clinical document at a macro level.","http://hl7.org/fhir/ValueSet/document-classcodes","",,,,"Composition.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Composition-adultcheck","Composition.subject","Composition.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+"Composition-adultcheck","Composition.subject","Composition.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","Who and/or what the composition is about","Who or what the composition is about. The composition can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure).","For clinical documents, this is usually the patient.","Essential metadata for searching for the composition. Identifies who and/or what the composition/document is about.","","","","","","","",,,,,"",,,,"Composition.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Composition-adultcheck","Composition.encounter","Composition.encounter","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Encounter-adultcheck]]}
+"Composition-adultcheck","Composition.encounter","Composition.encounter","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck]]}
 ","成人健檢就醫紀錄","成人健檢就醫紀錄","","Provides context for the composition and supports searching.","","","","","","","",,,,,"",,,,"Composition.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Composition-adultcheck","Composition.date","Composition.date","","","",1,1,"Y","","Y","dateTime {[]} {[]}
@@ -4964,7 +4964,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","系統的版本—如果相關的話","選擇此代碼時使用的代碼系統版本；請注意，一個維護良好的代碼系統不需要版本報告，因為代碼的意義在不同系統版本中是一致的；然而，不能始終保證這點，當不能保證意義一致時， **必須(SHALL)** 將版本資訊也一併作交換。","如果專門術語沒有明確定義應該使用什麼字串來識別代碼系統的版本，建議使用版本正式發布的日期（用FHIR日期格式表示）作為版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Condition-adultcheck","Condition.code.coding:sct.code","Condition.code.coding.code","","","",0,1,"Y","","Y","code {[]} {[]}
-","系統定義的語法之符號","系統定義的語法之符號；符號可能是一個預先定義的代碼，也可能是代碼系統定義的語法中的表達式（如後組合配對／後組合式）。","","需要參照系統中的一個特定代碼","","","","","","","",,"required","","http://tsti.example.com/ValueSet/adultcheck-code","",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","系統定義的語法之符號","系統定義的語法之符號；符號可能是一個預先定義的代碼，也可能是代碼系統定義的語法中的表達式（如後組合配對／後組合式）。","","需要參照系統中的一個特定代碼","","","","","","","",,"required","","https://fhirisolationroom.azurehealthcareapis.com/ValueSet/adultcheck-code","",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Condition-adultcheck","Condition.code.coding:sct.display","Condition.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
 ","由系統定義的表示法","遵循系統的規則以呈現代碼含義的表示法","","需要能為不了解此系統的讀者呈現可讀的代碼含義","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -4980,7 +4980,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Condition-adultcheck","Condition.subject","Condition.subject","","patient
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","擁有此疾病史的個案是誰","表示與此病情、問題或診斷紀錄相關的病人或實體集合（Group resource）","","實體集合（Group resource）通常用於獸醫或公共衛生的案例","","","","","","","",,,,,"",,,,"Condition.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Condition-adultcheck","Condition.encounter","Condition.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Encounter-twcore]]}
@@ -5332,7 +5332,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "DiagnosticReport-adultcheck","DiagnosticReport.subject","DiagnosticReport.subject","","Patient
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","報告的對象—通常但不總是病人","報告的對象體，通常但不總是病人。然而，診斷服務也對從其他各種來源收集的檢體進行分析。",""," **必須(SHALL)** 知道對象的背景","","","","","","","",,,,,"",,,,"DiagnosticReport.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "DiagnosticReport-adultcheck","DiagnosticReport.encounter","DiagnosticReport.encounter","","Context
@@ -5761,7 +5761,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Encounter-adultcheck","Encounter.subject","Encounter.subject","","patient
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","在場就醫的病人或實體集合（Group）","在場就醫的病人或實體集合（Group）","雖然就醫總是關於病人，但在所有的使用情境中，病人實際上可能並不為人所知及可能有一群病人是匿名的（例如：匿名酗酒者的團體治療中—就醫紀錄是以人數/工作人員數計費，而具體病人的情境並不重要）；或者在獸醫照護中，一群羊接受治療（動物沒有被單獨追蹤）。","","","","","","","","",,,,,"",,,,"Encounter.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Encounter-adultcheck","Encounter.episodeOfCare","Encounter.episodeOfCare","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/EpisodeOfCare]]}
@@ -6148,7 +6148,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ObservationBMI-adultcheck","Observation.code.text","Observation.code.text","","","",0,1,"Y","","Y","string {[]} {[]}
 ","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ObservationBMI-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+"ObservationBMI-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","檢驗檢查有關的對象及（或）事物","此檢驗檢查是關於一位病人、一群病人、地點、或設備。如果檢驗檢查的實際焦點與對象（或其樣本、其部分或其區域）不同，則焦點資料項目或代碼本身會具體說明檢驗檢查的實際焦點。","人們期望這個資料項目的cardinality為1...1。唯一可能缺少對象的情況是當檢驗檢查是由一個不認識病人的設備進行的。在這種情況下，應透過一些情境／通道對應（context／channel matching）技術將檢驗檢查與病人對應，此時，應更新檢驗檢查資訊。","如果你不知道他們是誰或關於什麼，檢驗檢查不會有值。","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ObservationBMI-adultcheck","Observation.focus","Observation.focus","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
@@ -6596,7 +6596,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ObservationDepression-adultcheck","Observation.code.text","Observation.code.text","","","",0,1,"Y","","Y","string {[]} {[]}
 ","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ObservationDepression-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+"ObservationDepression-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","檢驗檢查有關的對象及（或）事物","此檢驗檢查是關於一位病人、一群病人、地點、或設備。如果檢驗檢查的實際焦點與對象（或其樣本、其部分或其區域）不同，則焦點資料項目或代碼本身會具體說明檢驗檢查的實際焦點。","人們期望這個資料項目的cardinality為1...1。唯一可能缺少對象的情況是當檢驗檢查是由一個不認識病人的設備進行的。在這種情況下，應透過一些情境／通道對應（context／channel matching）技術將檢驗檢查與病人對應，此時，應更新檢驗檢查資訊。","如果你不知道他們是誰或關於什麼，檢驗檢查不會有值。","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ObservationDepression-adultcheck","Observation.focus","Observation.focus","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
@@ -7052,7 +7052,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ObservationHeight-adultcheck","Observation.code.text","Observation.code.text","","","",0,1,"Y","","Y","string {[]} {[]}
 ","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ObservationHeight-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+"ObservationHeight-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","檢驗檢查有關的對象及（或）事物","此檢驗檢查是關於一位病人、一群病人、地點、或設備。如果檢驗檢查的實際焦點與對象（或其樣本、其部分或其區域）不同，則焦點資料項目或代碼本身會具體說明檢驗檢查的實際焦點。","人們期望這個資料項目的cardinality為1...1。唯一可能缺少對象的情況是當檢驗檢查是由一個不認識病人的設備進行的。在這種情況下，應透過一些情境／通道對應（context／channel matching）技術將檢驗檢查與病人對應，此時，應更新檢驗檢查資訊。","如果你不知道他們是誰或關於什麼，檢驗檢查不會有值。","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ObservationHeight-adultcheck","Observation.focus","Observation.focus","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
@@ -7494,7 +7494,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ObservationLab-adultcheck","Observation.code.text","Observation.code.text","","","",0,1,"Y","","Y","string {[]} {[]}
 ","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ObservationLab-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+"ObservationLab-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","檢驗檢查有關的對象及（或）事物","此檢驗檢查是關於一位病人、一群病人、地點、或設備。如果檢驗檢查的實際焦點與對象（或其樣本、其部分或其區域）不同，則焦點資料項目或代碼本身會具體說明檢驗檢查的實際焦點。","人們期望這個資料項目的cardinality為1...1。唯一可能缺少對象的情況是當檢驗檢查是由一個不認識病人的設備進行的。在這種情況下，應透過一些情境／通道對應（context／channel matching）技術將檢驗檢查與病人對應，此時，應更新檢驗檢查資訊。","如果你不知道他們是誰或關於什麼，檢驗檢查不會有值。","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ObservationLab-adultcheck","Observation.focus","Observation.focus","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
@@ -7941,7 +7941,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ObservationLife-adultcheck","Observation.code.coding.code","Observation.code.coding.code","","","",0,1,"","","Y","code {[]} {[]}
-","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,"required","","http://tsti.example.com/ValueSet/adultcheck-lifecode","",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,"required","","https://fhirisolationroom.azurehealthcareapis.com/ValueSet/adultcheck-lifecode","",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ObservationLife-adultcheck","Observation.code.coding.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -7952,7 +7952,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ObservationLife-adultcheck","Observation.code.text","Observation.code.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ObservationLife-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+"ObservationLife-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","Who and/or what the observation is about","The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation.","One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.","Observations have no value if you don't know who or what they're about.","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ObservationLife-adultcheck","Observation.focus","Observation.focus","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
@@ -8322,7 +8322,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ObservationPressure-adultcheck","Observation.code.text","Observation.code.text","","","",0,1,"Y","","Y","string {[]} {[]}
 ","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ObservationPressure-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+"ObservationPressure-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","檢驗檢查有關的對象及（或）事物","此檢驗檢查是關於一位病人、一群病人、地點、或設備。如果檢驗檢查的實際焦點與對象（或其樣本、其部分或其區域）不同，則焦點資料項目或代碼本身會具體說明檢驗檢查的實際焦點。","人們期望這個資料項目的cardinality為1...1。唯一可能缺少對象的情況是當檢驗檢查是由一個不認識病人的設備進行的。在這種情況下，應透過一些情境／通道對應（context／channel matching）技術將檢驗檢查與病人對應，此時，應更新檢驗檢查資訊。","如果你不知道他們是誰或關於什麼，檢驗檢查不會有值。","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ObservationPressure-adultcheck","Observation.focus","Observation.focus","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
@@ -8819,7 +8819,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ObservationWaist-adultcheck","Observation.code.text","Observation.code.text","","","",0,1,"Y","","Y","string {[]} {[]}
 ","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ObservationWaist-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+"ObservationWaist-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","檢驗檢查有關的對象及（或）事物","此檢驗檢查是關於一位病人、一群病人、地點、或設備。如果檢驗檢查的實際焦點與對象（或其樣本、其部分或其區域）不同，則焦點資料項目或代碼本身會具體說明檢驗檢查的實際焦點。","人們期望這個資料項目的cardinality為1...1。唯一可能缺少對象的情況是當檢驗檢查是由一個不認識病人的設備進行的。在這種情況下，應透過一些情境／通道對應（context／channel matching）技術將檢驗檢查與病人對應，此時，應更新檢驗檢查資訊。","如果你不知道他們是誰或關於什麼，檢驗檢查不會有值。","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ObservationWaist-adultcheck","Observation.focus","Observation.focus","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
@@ -9219,7 +9219,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ObservationWeight-adultcheck","Observation.code.text","Observation.code.text","","","",0,1,"Y","","Y","string {[]} {[]}
 ","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ObservationWeight-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://tsti.example.com/StructureDefinition/Patient-adultcheck]]}
+"ObservationWeight-adultcheck","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
 ","檢驗檢查有關的對象及（或）事物","此檢驗檢查是關於一位病人、一群病人、地點、或設備。如果檢驗檢查的實際焦點與對象（或其樣本、其部分或其區域）不同，則焦點資料項目或代碼本身會具體說明檢驗檢查的實際焦點。","人們期望這個資料項目的cardinality為1...1。唯一可能缺少對象的情況是當檢驗檢查是由一個不認識病人的設備進行的。在這種情況下，應透過一些情境／通道對應（context／channel matching）技術將檢驗檢查與病人對應，此時，應更新檢驗檢查資訊。","如果你不知道他們是誰或關於什麼，檢驗檢查不會有值。","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ObservationWeight-adultcheck","Observation.focus","Observation.focus","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}

@@ -2,7 +2,7 @@
   "resourceType" : "Patient",
   "id" : "PatientAdultCheckExample",
   "meta" : {
-    "profile" : ["http://tsti.example.com/StructureDefinition/Patient-adultcheck"]
+    "profile" : ["https://fhirisolationroom.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck"]
   },
   "text" : {
     "status" : "generated",

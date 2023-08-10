@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ff9e1ca5-094e-41ce-9273-fb26e3ada5de"/>
+  <id value="49d38ce4-7f94-4933-824d-0db697d75278"/>
   <meta>
-    <lastUpdated value="2023-08-07T17:23:39.182+08:00"/>
+    <lastUpdated value="2023-08-10T13:03:13.567+08:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://tsti.example.com/ValueSet/adultcheck-code"/>
+    <fullUrl value="https://fhirisolationroom.azurehealthcareapis.com/ValueSet/adultcheck-code"/>
     <resource>
       <ValueSet>
         <text>
@@ -78,15 +78,15 @@
             </table>
           </div>
         </text>
-        <url value="http://tsti.example.com/ValueSet/adultcheck-code"/>
+        <url value="https://fhirisolationroom.azurehealthcareapis.com/ValueSet/adultcheck-code"/>
         <version value="0.1.0"/>
         <name value="ValueSet-adultcheck-code"/>
         <title value="成人健檢疾病史代碼"/>
         <status value="draft"/>
-        <date value="2023-08-07T17:23:39+08:00"/>
+        <date value="2023-08-10T13:03:13+08:00"/>
         <expansion>
-          <identifier value="urn:uuid:82cfb755-e9d0-48d1-b6ca-edf1a27322a1"/>
-          <timestamp value="2023-08-07T17:28:30+08:00"/>
+          <identifier value="urn:uuid:8c4cdbd3-5fa3-4cf6-bc36-59cf74f8d993"/>
+          <timestamp value="2023-08-10T13:11:31+08:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -140,7 +140,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://tsti.example.com/ValueSet/adultcheck-lifecode"/>
+    <fullUrl value="https://fhirisolationroom.azurehealthcareapis.com/ValueSet/adultcheck-lifecode"/>
     <resource>
       <ValueSet>
         <text>
@@ -267,15 +267,15 @@
             </table>
           </div>
         </text>
-        <url value="http://tsti.example.com/ValueSet/adultcheck-lifecode"/>
+        <url value="https://fhirisolationroom.azurehealthcareapis.com/ValueSet/adultcheck-lifecode"/>
         <version value="0.1.0"/>
         <name value="ValueSet_adultcheck-lifecode"/>
         <title value="成人健檢生活史代碼集值"/>
         <status value="active"/>
-        <date value="2023-08-07T17:23:39+08:00"/>
+        <date value="2023-08-10T13:03:13+08:00"/>
         <expansion>
-          <identifier value="urn:uuid:916356d8-39f0-480b-8bec-53cfecc7bb16"/>
-          <timestamp value="2023-08-07T17:28:30+08:00"/>
+          <identifier value="urn:uuid:e86bc367-c415-4421-bc7d-91a965551981"/>
+          <timestamp value="2023-08-10T13:11:31+08:00"/>
           <total value="13"/>
           <parameter>
             <name value="excludeNested"/>
